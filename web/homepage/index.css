@@ -1,0 +1,246 @@
+* {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+    body {
+        background:#BBB;
+        font-family: 'Inknut Antiqua', serif;
+        font-family: 'Ravi Prakash', cursive;
+        font-family: 'Lora', serif;
+        font-family: 'Indie Flower', cursive;
+        font-family: 'Cabin', sans-serif;
+        background: url("../homepage/17373.jpg") no-repeat center center scroll;
+
+        background-size: cover;
+
+    }
+    div.container {
+        max-width: 1850px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 80px;
+        padding-bottom: 50px;
+    }
+    .upcomming {
+        font-size: 45px;
+        text-transform: uppercase;
+        padding-left: 12px;
+        margin: 18px 8px;
+        position:absolute;
+        right:38%;
+        top:20%
+
+    }
+    button:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0;
+    }
+    .container .item {
+        width: 48%;
+        float: left;
+        padding: 0 20px;
+        background: #fff;
+        overflow: hidden;
+        margin: 10px
+    }
+    .container .item-right, .container .item-left {
+        float: left;
+        padding: 20px
+    }
+    .container .item-right {
+        padding: 79px 50px;
+        margin-right: 20px;
+        width: 25%;
+        position: relative;
+        height: 286px
+    }
+    .container .item-right .up-border, .container .item-right .down-border {
+        padding: 14px 15px;
+        background-color: #ddd;
+        border-radius: 50%;
+        position: absolute
+    }
+    .container .item-right .up-border {
+        top: -8px;
+        right: -35px;
+    }
+    .container .item-right .down-border {
+        bottom: -13px;
+        right: -35px;
+    }
+    .container .item-right .num {
+        font-size: 60px;
+        text-align: center;
+        color: #111
+    }
+    .container .item-right .day, .container .item-left .event {
+        color: #555;
+        font-size: 20px;
+        margin-bottom: 9px;
+    }
+    .container .item-right .day {
+        text-align: center;
+        font-size: 25px;
+    }
+    .container .item-left {
+        width: 71%;
+        padding: 34px 0px 19px 46px;
+        border-left: 3px dotted #999;
+    }
+    .container .item-left .title {
+        color: #111;
+        font-size: 34px;
+        margin-bottom: 12px
+    }
+    .container .item-left .sce {
+        margin-top: 5px;
+        display: block
+    }
+    .container .item-left .sce .icon, .container .item-left .sce p,
+    .container .item-left .loc .icon, .container .item-left .loc p{
+        float: left;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+        color: #888;
+        margin-bottom: 10px;
+    }
+    .container .item-left .sce .icon, .container .item-left .loc .icon {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #666
+    }
+    .container .item-left .loc {display: block}
+    .fix {clear: both}
+    .container .item .tickets, .booked, .cancel{
+        color: #fff;
+        padding: 6px 14px;
+        float: right;
+        margin-top: 10px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer
+    }
+    .container .item .tickets {background: #223073
+    }
+    .container .item .booked {background: #3D71E9}
+    .container .item .cancel {background: #DF5454}
+    .linethrough {text-decoration: line-through}
+    @media only screen and (max-width: 1150px) {
+        .container .item {
+            width: 100%;
+            margin-right: 20px
+        }
+        div.container {
+            margin: 0 20px auto
+        }
+    }
+    /* Footer styles */
+    .footer-container {
+        background-color: #2c3e50; /* Dark background color */
+        color: #ecf0f1; /* Light text color */
+        padding: 10px 0; /* Padding around content */
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer-container .social-media-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;  /* Space below icons */
+    }
+
+    .footer-container a {
+        color: #ecf0f1;  /* Light link color */
+        text-decoration: none;  /* Remove underline from links */
+        margin: 0 10px;  /* Space between icons */
+        transition: color 0.3s;  /* Smooth color transition */
+    }
+
+    .footer-container a:hover {
+        color: #3498db;  /* Change color on hover */
+    }
+
+    .footer-container .footer-text {
+        margin-top: 10px;  /* Space above text */
+    }
+
+    .event-list {
+        height: calc(95vh - 200px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        position:absolute;
+        top:50%;
+        right:25%;
+
+    }
+
+    .event-list1 {
+        height: calc(95vh - 200px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        position:absolute;
+        top:50%;
+        right:40%;
+
+    }
+
+    .welcome-message {
+        text-align: right;
+        padding-right: 5px;
+        font-size: 30px;
+        line-height: 1.5;
+        float: right;
+        margin-bottom: 15px;
+    }
+    .user-actions {
+        text-align: right;
+        padding-right: 5px;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .user-link {
+        display: inline;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: #007bff;
+
+
+    }
+    .btn-blue {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(46, 46, 180, 0.7);
+    color: #fff;
+    padding: 32px 60px;
+    margin: 20px 20px;
+    cursor: pointer;
+    }
+    .btn-blue span{
+    font-size:20px;
+    }
+    .btn-green {
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(201, 76, 76, 0.3);
+        color: #fff;
+        padding: 32px 60px;
+        margin: 20px 20px;
+        cursor: pointer;
+        position:relative;
+        right:50%;
+    }
+
+.btn-blue:hover {
+    background-color: #311B92;
+    color: #fff;
+}

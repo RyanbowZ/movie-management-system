@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Indie+Flower|Inknut+Antiqua|Lora|Ravi+Prakash" rel="stylesheet">
+<link rel="stylesheet" href="./menus.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendation</title>
+
+</head>
+<body>
+<div class="container px-4 py-5 mx-auto">
+    <div class="row d-flex">
+        <div class="col-5">
+            <h4 class="heading">Buy Tickets</h4>
+        </div>
+    </div>
+<h1 >Movie Recommendation System</h1>
+
+<div class="card">
+    <div>
+        <span>Movie Type:</span>
+        <input type="movietype" class="input" placeholder="Drama" />
+        <div>
+            Movie ID:
+            <span id="movieid">
+
+            </span>
+        </div>
+        <div>
+            Movie Name:
+            <span id="moviename">
+
+            </span>
+        </div>
+        <div>
+            Rate:
+            <span id="rate">
+
+            </span>
+        </div>
+        <div>
+            Audience Review:
+            <span id="review">
+
+            </span>
+        </div>
+
+    </div>
+    <button class="btn-block btn-blue" id = "submitBtn">
+        Get best movie
+    </button>
+</div>
+</div>
+
+<script  src="./recommend.js"></script>
+</body>
+
+</html>

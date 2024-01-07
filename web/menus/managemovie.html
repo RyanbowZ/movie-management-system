@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Indie+Flower|Inknut+Antiqua|Lora|Ravi+Prakash" rel="stylesheet">
+<link rel="stylesheet" href="./menus.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage movies</title>
+
+</head>
+
+<body>
+<div class="container px-4 py-5 mx-auto">
+    <div class="row d-flex">
+        <div class="col-5">
+            <h4 class="heading">Buy Tickets</h4>
+        </div>
+    </div>
+
+    <h1>Load or update movies information</h1>
+    <div class="card">
+        <div>
+    <span>Movie ID:</span>
+    <input type="movieid" class="input" placeholder="Movie ID" />
+        </div>
+        <br />
+
+<div>
+    <span>Category ID:</span>
+    <input type="cateid" class="input" placeholder="Category ID" />
+</div>
+<div>
+    <span>Movie Name:</span>
+    <input type="moviename" class="input" placeholder="Movie Name" />
+</div>
+<div>
+    <span>Price:</span>
+    <input type="price" class="input" placeholder="Price" />
+</div>
+<div>
+    <span>Quantity:</span>
+    <input type="quantity" class="input" placeholder="Quantity" />
+</div>
+<button class="btn-block btn-blue" id = "loadBtn">
+    Load Movie Info
+</button>
+<button class="btn-block btn-blue" id = "saveBtn">
+    Save Movie Info
+</button>
+    </div>
+</div>
+
+<script  src="./managemovie.js"></script>
+</body>
+
+</html>

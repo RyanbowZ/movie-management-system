@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Citi Ticketing - Check out</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Indie+Flower|Inknut+Antiqua|Lora|Ravi+Prakash" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container px-4 py-5 mx-auto">
+  <!-- 添加返回首页的链接 -->
+  <div class="row">
+    <div class="col-12 text-right">
+      <a href="../homepage/index.html" class="return-home">Return to Home</a>
+    </div>
+  </div>
+
+  <div class="row d-flex">
+    <div class="col-5">
+      <h4 class="heading">Checkout</h4>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="row px-2">
+          <div class="form-group col-md-3">
+            <label class="form-control-label">Address</label>
+            <input type="text" id="street" name="street" placeholder="102 Main Road">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="form-control-label">Card Number</label>
+            <input type="text" id="cnum" name="cnum" placeholder="1520 6221 8542 9227">
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+          <div class="row d-flex justify-content-between px-4">
+            <p class="mb-1 text-left">Order ID: </p>
+            <h6 class="mb-1 text-right" id="orderid">$0.00</h6>
+          </div>
+          <div class="row d-flex justify-content-between px-4">
+            <p class="mb-1 text-left">Customer ID: </p>
+            <h6 class="mb-1 text-right" id="userid">$0.00</h6>
+          </div>
+          <div class="row d-flex justify-content-between px-4">
+            <p class="mb-1 text-left">Customer Name: </p>
+            <h6 class="mb-1 text-right" id="username">$0.00</h6>
+          </div>
+
+          <div class="row d-flex justify-content-between px-4">
+            <p class="mb-1 text-left">Order Subtotal: </p>
+            <h6 class="mb-1 text-right" id="subtotal-price">$0.00</h6>
+          </div>
+          <div class="row d-flex justify-content-between px-4">
+            <p class="mb-1 text-left">Total (tax included): </p>
+            <h6 class="mb-1 text-right" id="total-price">$0.00</h6>
+          </div>
+
+          <button class="btn-block btn-blue" id = checkoutBtn>
+                            <span>
+                                <span id="checkout">Checkout</span>
+                                <span id="check-amt">$0.00</span>
+                            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<!-- partial -->
+<script  src="./checkout.js"></script>
+</body>
+</html>
